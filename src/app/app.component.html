@@ -1,0 +1,10 @@
+<h1>Caja Registradora</h1>
+<div class="container">
+  <div class="izquierda">
+    <app-lista-productos titulo="Comidas" [productos]="listaComida" (productoSeleccionado)="onProductoSeleccionado($event)"></app-lista-productos>
+    <app-lista-productos titulo="Bebidas" [productos]="listaBebida" (productoSeleccionado)="onProductoSeleccionado($event)"></app-lista-productos>
+  </div>
+  <div class="derecha">
+    <app-comanda [arrProductos]="productosSeleccionados"></app-comanda>
+  </div>
+</div>

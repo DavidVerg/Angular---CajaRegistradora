@@ -1,0 +1,7 @@
+<h3>Comanda</h3>
+<p>TOTAL: {{ calculaTotal() }}$</p>
+<div class="productos">
+  <div class="prodcuto" *ngFor="let producto of arrProductos; let indice = index">
+    <p class="pProducto" (click)="onClickBorrar(indice)">{{ producto.nombre }} x {{ producto.cantidad }} - {{ producto.precio * producto.cantidad }}$</p>
+  </div>
+</div>

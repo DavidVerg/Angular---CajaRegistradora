@@ -1,0 +1,13 @@
+h3 {
+  text-transform: uppercase;
+  background-color: lightgoldenrodyellow;
+}
+
+.pProducto:hover {
+  text-decoration: underline;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+}
